@@ -17,3 +17,11 @@ Useful references:
 
 Uses `pigpio`, which requires you to start a daemon with `sudo pigpiod` to
 work.
+
+
+## Google Sheets Integration
+
+Need to follow
+https://denisluiz.medium.com/python-with-google-sheets-service-account-step-by-step-8f74c26ed28e
+to set things up properly (see also
+https://github.com/juampynr/google-spreadsheet-reader).
