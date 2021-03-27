@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "plant-data"
+version = "0.1.0"
+description = "Automatic data gathering from sensors for hydroponics."
+authors = ["Kovas Palunas <kovas.palunas@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+google-api-python-client = "^2.0.2"
+google-auth-oauthlib = "^0.4.3"
+Adafruit-DHT = "^1.4.0"
+board = "^1.0"
+adafruit-blinka = "^6.4.1"
+"RPi.GPIO" = "^0.7.0"
+pigpio = "^1.78"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
