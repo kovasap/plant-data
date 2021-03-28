@@ -25,10 +25,14 @@ Add this line (or whatever corresponds to your poetry virtualenv created by
 ```
 to `crontab -u pi -e`.  This takes a measurement every hour.
 
+Be sure to run `poetry shell` and `poetry install` in order for this to work.
+
 
 ## Google Sheets Integration
 
 Need to follow
 https://denisluiz.medium.com/python-with-google-sheets-service-account-step-by-step-8f74c26ed28e
 to set things up properly (see also
-https://github.com/juampynr/google-spreadsheet-reader).
+https://github.com/juampynr/google-spreadsheet-reader).  Move the
+`client_secret.json` file into the `plant_data` code directory before running
+`poetry install`.

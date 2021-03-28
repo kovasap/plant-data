@@ -10,7 +10,7 @@ SAMPLE_SPREADSHEET_ID = '1GBeSWGv5R-BQbKymKNVWs17HTEuIsa1XquMWWbnyiE8'
 class GSheets:
     def __init__(self):
         creds = service_account.Credentials.from_service_account_file(
-            os.path.join(os.getcwd(), 'client_secret.json'),
+            os.path.join(os.path.dirname(__file__), 'client_secret.json'),
             scopes=['https://www.googleapis.com/auth/spreadsheets'])
 
         self.service = build('sheets', 'v4', credentials=creds)
