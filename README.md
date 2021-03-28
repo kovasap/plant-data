@@ -6,7 +6,7 @@ Add this line
 ```
 0 * * * * ~/plant-data/take_picture.bash
 ```
-to `crontab -u pi -e`.
+to `crontab -u pi -e`.  This takes a picture every hour.
 
 Useful references:
 
@@ -17,6 +17,13 @@ Useful references:
 
 Uses `pigpio`, which requires you to start a daemon with `sudo pigpiod` to
 work.
+
+Add this line (or whatever corresponds to your poetry virtualenv created by
+`poetry shell`).
+```
+0 * * * * /home/pi/.cache/pypoetry/virtualenvs/plant-data-nC_HxkvU-py3.7/bin/plant-data
+```
+to `crontab -u pi -e`.  This takes a measurement every hour.
 
 
 ## Google Sheets Integration

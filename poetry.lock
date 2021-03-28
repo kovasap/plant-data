@@ -68,6 +68,14 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
+name = "click"
+version = "7.1.2"
+description = "Composable command line interface toolkit"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
 name = "google-api-core"
 version = "1.26.2"
 description = "Google API client core library"
@@ -377,7 +385,7 @@ brotli = ["brotlipy (>=0.6.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "8c8ca3bbf5a0fe49defe5c5c80aea4dbc4e4645e9ad93fe8d7b0b055f1e196dc"
+content-hash = "5f921945e54adf725caf3f162e7913410b698b9781a23068c28b925e9baaeb4f"
 
 [metadata.files]
 adafruit-blinka = [
@@ -407,6 +415,10 @@ certifi = [
 chardet = [
     {file = "chardet-4.0.0-py2.py3-none-any.whl", hash = "sha256:f864054d66fd9118f2e67044ac8981a54775ec5b67aed0441892edb553d21da5"},
     {file = "chardet-4.0.0.tar.gz", hash = "sha256:0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa"},
+]
+click = [
+    {file = "click-7.1.2-py2.py3-none-any.whl", hash = "sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"},
+    {file = "click-7.1.2.tar.gz", hash = "sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"},
 ]
 google-api-core = [
     {file = "google-api-core-1.26.2.tar.gz", hash = "sha256:418a131cd349e8bda036741d93e7fb9caefa691daa7296851193edc60b3c946c"},
